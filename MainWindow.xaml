@@ -1,0 +1,14 @@
+﻿<Window x:Class="Float16Conversion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBox Grid.Column="0" x:Name="sourceTextBox" FontFamily="Consolas" FontSize="10pt" AcceptsReturn="True" TextChanged="sourceTextBox_TextChanged"/>
+        <TextBox Grid.Column="1" x:Name="destTextBox" FontFamily="Consolas" FontSize="10pt" IsReadOnly="True" IsReadOnlyCaretVisible="True"/>
+    </Grid>
+</Window>
